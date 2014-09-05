@@ -1,0 +1,19 @@
+screen -t root sudo su -
+screen -t bash2
+screen -t bash3
+
+select 0
+startup_message off
+
+caption always "%{= kw}%-w%{= bw}%n %t%{-}%+w %-= @%H - %c - (%l)"
+#
+# Call via:  screen -R -e^Hh -d
+#
+# to change the strings, look at:
+# http://www.gnu.org/software/screen/manual/screen.html#String-Escapes
+#
+# to test your changes, you can either copy the above line, the do
+# CTRL-H :  and then paste in the line above
+#
+# or, CTRL-H :source ~/.screenrc
+
